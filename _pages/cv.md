@@ -31,7 +31,7 @@ Work experience
 Skills
 ======
 * Embedded C/C++, Modern C++, Python, MATLAB, ROS (roscpp, rospy, rclcpp) 
-* Git, Linux, bash, zsh, 
+* Git, Linux, bash, zsh 
 * Arduino, Raspberry Pi, Microcontroller
 * Solidworks, Fusion 360, MCUXpresso
 
