@@ -11,35 +11,48 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* MEng in Engineering Science, Oxford University, 2026 (expected)
+* Korean Minjok Leadership Academy, 2022
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* June 2023: Mechatronics Lab Intern
+  * Bear Robotics, Seoul, Korea
+  * Supervisor: Jong-Won Kim
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Mar 2024: Student Intern
+  * Lightricity Ltd, Oxford, UK
+  * Supervisor: Julien Campos 
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* July 2024: Visiting Student Researcher
+  * Urban Robotics Lab @ KAIST, Daejeon, Korea
+  * Supervisors: Seoyeon Jang, Professor Hyun Myung
+
 Skills
 ======
-* Skill 1
+* Embedded C/C++, Modern C++, Python, MATLAB, ROS (roscpp, rospy, rclcpp) 
+* Git, Linux, bash, zsh, 
+* Arduino, Raspberry Pi, Microcontroller
+* Solidworks, Fusion 360, MCUXpresso
+
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
+
+Courses 
+======
+
+Coursework
+======
+* AI/ML with Python
+  * Regression/Classification Basics: Linear regression, logistic regression, probability interpretations, generalized linear models, etc.
+  * Optimization: convexity, (stochastic) gradient descent, momentum method, line search, second-order methods, gradient-free optimizations, etc.
+  * Neural Networks: classic neural network architectures and training techniques using PyTorch
+* Mobile Robotics
+* Mechanical CAD
+* X-Y Plotter Challenge, Oxford Robotics Institute
 
 Publications
 ======
