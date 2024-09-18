@@ -23,30 +23,39 @@ Work experience
 * Mar 2024: Student Intern
   * Lightricity Ltd, Oxford, UK
   * Supervisor: Julien Campos 
+  *	Developed 16-bit MCU code on evaluation board containing EPD display and lux sensor to be powered by company’s low-power indoor PV cell 
 
 * July 2024: Visiting Student Researcher
   * Urban Robotics Lab @ KAIST, Daejeon, Korea
   * Supervisors: Seoyeon Jang, Professor Hyun Myung
+  * [Mid-presentation](files/VSRPresentation.pdf)
+  * Ground-truth labeling in [HeLiMOS Dataset](https://sites.google.com/view/helimos)
+  * Motion blur filter for dense mesh generation from LiDAR/camera data
+  * Ported room-segmentation data from situational graphs for low-dynamic object detection/multi-session change detection
 
-Skills
+Courses
 ======
-* Embedded C/C++, Modern C++, Python, MATLAB, ROS (roscpp, rospy, rclcpp) 
-* Git, Linux, bash, zsh 
-* Arduino, Raspberry Pi, Microcontroller
-* Solidworks, Fusion 360, MCUXpresso
-
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Courses 
-======
+* 1st Year: Pass (average of 78.2%)
+  * P1 Mathematics
+  * P2 Electronic and Information Engineering
+  * P3 Structure and Mechanics
+  * P4 Energy
+* 2nd Year: First Class (average of 77.1%)
+  * A1 Mathematics
+  * A2 Electronic and Information Engineering
+  * A3 Structures, Materials and Dynamics
+  * A4 Thermofluids and Energy Systems
+* 3rd Year:
+  * B12 Electronic Devices
+  * B13 Circuits and Communications
+  * B14 Information Engineering Systems
+  * B15 Control Systems
+  * B20 Machine Learning
 
 Coursework
 ======
 * AI/ML with Python
+  * Hands-on introduction to machine learning and mathematics fundamentals with practicals (PyTorch) and lectures
   * Regression/Classification Basics: Linear regression, logistic regression, probability interpretations, generalized linear models, etc.
   * Optimization: convexity, (stochastic) gradient descent, momentum method, line search, second-order methods, gradient-free optimizations, etc.
   * Neural Networks: classic neural network architectures and training techniques using PyTorch
@@ -54,24 +63,15 @@ Coursework
 * Mechanical CAD
 * X-Y Plotter Challenge, Oxford Robotics Institute
 
-Publications
+Projects and Leadership
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* Secretary, Oxford University Korean Society
+* Project Lead, QRONK @ Oxford Robotics and Additive Manufactory (OxRAM) Society
+  * [Link to Project](https://github.com/QronkOxford/Qronk)
+
+Skills
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Embedded C/C++, Modern C++, Python, MATLAB, ROS (roscpp, rospy, rclcpp) 
+* Git, Linux, bash, zsh 
+* Arduino, Raspberry Pi, Microcontroller
+* Solidworks, Fusion 360, MCUXpresso
