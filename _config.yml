@@ -20,7 +20,7 @@ repository               : "JinRhee/jinrhee.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Jin Rhee"
   pronouns         : # example: "she/her"  
   bio              : "Student in Engineering"
