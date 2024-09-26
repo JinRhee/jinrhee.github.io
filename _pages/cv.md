@@ -65,7 +65,7 @@ Coursework
 
 Projects and Leadership
 ======
-* Secretary, Oxford University Korean Society
+* Secretary, University of Oxford Korean Society
 * Project Lead, QRONK @ Oxford Robotics and Additive Manufactory (OxRAM) Society
   * [Link to Project](https://github.com/QronkOxford/Qronk)
 
