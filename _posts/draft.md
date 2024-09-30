@@ -7,15 +7,6 @@ tags:
   - category1
   - category2
 ---
-layout: single
-title:  "Draft Post"
-header:
-  teaser: "unsplash-gallery-image-2-th.jpg"
-categories:
-  - Jekyll
-tags:
-  - edge case
----
 # Switch to LLVM/Clang compiler for CMake (Ubuntu 22.04 aarch64 on Apple Silicon via Multipass)
 
 A package I work with compiles fine on Linux x86, but crashes in a firey hell on my Mac.
