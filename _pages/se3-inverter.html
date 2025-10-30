@@ -1,0 +1,54 @@
+---
+layout: archive
+title: "SE(3) Matrix Inverter"
+permalink: /tools/se3-inverter/
+---
+
+<h2>SE(3) Matrix Inverter</h2>
+
+<textarea id="matrixInput" rows="6" cols="40" placeholder="Enter 4x4 matrix (rows separated by newlines)"></textarea>
+<br>
+<button id="invertBtn">Invert Matrix</button>
+
+<h3>Inverse:</h3>
+<pre id="output"></pre>
+
+<script>
+function parseMatrix(text) {
+  const rows = text.trim().split('\n').map(r => r.trim().split(/\s+/).map(Number));
+  if (rows.length !== 4 || !rows.every(r => r.length === 4)) {
+    throw new Error("Matrix must be 4x4");
+  }
+  return rows;
+}
+
+function invertSE3(matrix) {
+  const R = matrix.slice(0, 3).map(r => r.slice(0, 3));
+  const t = matrix.slice(0, 3).map(r => r[3]);
+  const Rt = R[0].map((_, i) => R.map(r => r[i]));
+  const tInv = Rt.map(row => -row.reduce((s, v, j) => s + v * t[j], 0));
+  return [
+    [...Rt[0], tInv[0]],
+    [...Rt[1], tInv[1]],
+    [...Rt[2], tInv[2]],
+    [0, 0, 0, 1]
+  ];
+}
+
+function formatMatrix(m) {
+  return m.map(r => r.map(v => v.toFixed(4)).join('\t')).join('\n');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('invertBtn').addEventListener('click', () => {
+    try {
+      const input = document.getElementById('matrixInput').value;
+      const M = parseMatrix(input);
+      const inv = invertSE3(M);
+      document.getElementById('output').textContent = formatMatrix(inv);
+    } catch (err) {
+      document.getElementById('output').textContent = 'Error: ' + err.message;
+    }
+  });
+});
+</script>
