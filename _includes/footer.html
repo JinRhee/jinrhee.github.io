@@ -5,7 +5,8 @@
   <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=wmOJAsL5hAscKdznvxl1bMgFf5r0xW6kgyds_UmSQK0&cl=ffffff&w=a"></script>
 </div>
 <script>
-  // The count arrives ~1–2 s after load; show it only once it has a number.
+  /* The count arrives ~1–2 s after load; show it only once it has a number.
+     Block comment, not //: production builds squash the page onto one line. */
   const visits = document.querySelector('.visits');
   new MutationObserver((_, observer) => {
     const count = visits.querySelector('.mapmyvisitors-visitors');
