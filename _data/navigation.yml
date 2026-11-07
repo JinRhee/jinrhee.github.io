@@ -1,15 +1,5 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# Links in the header, in order. Removing a link hides it from the header but the page still exists.
 
 main:
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /files/CV-JinRhee.pdf
-
-  - title: "SE(3) inverter"
-    url: /tools/se3-inverter/

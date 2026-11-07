@@ -19,4 +19,20 @@
 </div>
 {% endif %}
 
+<!-- MapMyVisitors counter; main.scss hides the map and shows only the count -->
+<div class="page__footer-copyright visits">
+  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=wmOJAsL5hAscKdznvxl1bMgFf5r0xW6kgyds_UmSQK0&cl=ffffff&w=a"></script>
+</div>
+<script>
+  // The count arrives ~1–2 s after load; show it only once it has a number.
+  const visits = document.querySelector('.visits');
+  new MutationObserver((_, observer) => {
+    const count = visits.querySelector('.mapmyvisitors-visitors');
+    if (count && /\d/.test(count.textContent)) {
+      visits.classList.add('ready');
+      observer.disconnect();
+    }
+  }).observe(visits, { childList: true, subtree: true, characterData: true });
+</script>
+
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>

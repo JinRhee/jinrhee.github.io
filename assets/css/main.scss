@@ -39,3 +39,29 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* Text-only MapMyVisitors: hide every widget part except the count.
+   !important beats the widget's own stylesheet and inline styles. */
+.visits #mapmyvisitors-widget {
+  display: inline !important;
+  width: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  color: inherit !important;
+  text-decoration: none;
+}
+.visits #mapmyvisitors-widget * { display: none !important; }
+.visits #mapmyvisitors-widget > .mapmyvisitors-map-container,
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors {
+  display: inline !important;
+  background: none !important;
+}
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors {
+  font: inherit !important;
+  color: inherit !important;
+  text-transform: lowercase !important;
+}
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors::after { content: " · past month"; }
+/* Hidden until the footer script sees a real number. */
+.visits { opacity: 0; transition: opacity .6s ease-out; font-size: $type-size-5; color: $dark-gray; }
+.visits.ready { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .visits { transition: none; } }
