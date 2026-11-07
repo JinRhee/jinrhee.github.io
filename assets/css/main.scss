@@ -65,3 +65,16 @@
 .visits { opacity: 0; transition: opacity .6s ease-out; font-size: $type-size-5; color: $dark-gray; }
 .visits.ready { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .visits { transition: none; } }
+
+/* News on the home page: dates in a column, no bullets */
+.news { list-style: none; margin-left: 0; padding: 0; }
+.news li { display: flex; gap: 1.2rem; margin: 0 0 .4em; }
+.news p { margin: 0; } /* kramdown wraps each item's text in <p> */
+.news time {
+  flex: 0 0 auto;
+  color: $gray;
+  font: .85em/1.9 "IBM Plex Mono", $monospace;
+}
+@media (max-width: 480px) {
+  .news li { flex-direction: column; gap: 0; }
+}

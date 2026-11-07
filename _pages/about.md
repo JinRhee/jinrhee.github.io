@@ -13,7 +13,8 @@ I studied Engineering Science at [Oxford](https://www.ox.ac.uk) (St John's Colle
 
 News
 ------
-<!-- Newest first. Add a line at the top to post news. -->
-- **2026-10** Example: submitted VIO paper to ICRA 2027.
-- **2026-06** Example: graduated MEng Engineering Science, Oxford.
-- **2024-07** Joined KAIST Urban Robotics Lab as a visiting student researcher.
+<!-- Newest first. Add a line at the top to post news. Keep the {: .news} line under the list. -->
+- <time>2026-10</time> Example: submitted VIO paper to ICRA 2027.
+- <time>2026-06</time> Example: graduated MEng Engineering Science, Oxford.
+- <time>2024-07</time> Joined KAIST Urban Robotics Lab as a visiting student researcher.
+{: .news}
