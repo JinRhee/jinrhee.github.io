@@ -78,3 +78,7 @@
 @media (max-width: 480px) {
   .news li { flex-direction: column; gap: 0; }
 }
+
+/* No underlines on links; the template's link colour marks them instead.
+   !important overrides the many per-section underline rules in _sass. */
+a, a:hover, a:focus { text-decoration: none !important; }
