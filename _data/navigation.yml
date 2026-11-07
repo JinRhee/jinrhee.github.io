@@ -1,5 +1,3 @@
 # Links in the header, in order. Removing a link hides it from the header but the page still exists.
 
-main:
-  - title: "CV"
-    url: /files/CV-JinRhee.pdf
+main: []
