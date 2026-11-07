@@ -39,3 +39,46 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* Text-only MapMyVisitors: hide every widget part except the count.
+   !important beats the widget's own stylesheet and inline styles. */
+.visits #mapmyvisitors-widget {
+  display: inline !important;
+  width: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  color: inherit !important;
+  text-decoration: none;
+}
+.visits #mapmyvisitors-widget * { display: none !important; }
+.visits #mapmyvisitors-widget > .mapmyvisitors-map-container,
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors {
+  display: inline !important;
+  background: none !important;
+}
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors {
+  font: inherit !important;
+  color: inherit !important;
+  text-transform: lowercase !important;
+}
+.visits #mapmyvisitors-widget .mapmyvisitors-visitors::after { content: " · past month"; }
+/* Hidden until the footer script sees a real number. */
+.visits { opacity: 0; transition: opacity .6s ease-out; font-size: $type-size-5; color: $dark-gray; }
+.visits.ready { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .visits { transition: none; } }
+
+/* News on the home page: dates in a column, no bullets */
+.news { list-style: none; margin-left: 0; padding: 0; }
+.news li { display: flex; gap: 1.2rem; margin: 0 0 .4em; }
+.news p { margin: 0; } /* kramdown wraps each item's text in <p> */
+.news time {
+  flex: 0 0 auto;
+  color: $gray;
+  font: .85em/1.9 "IBM Plex Mono", $monospace;
+}
+@media (max-width: 480px) {
+  .news li { flex-direction: column; gap: 0; }
+}
+
+/* No underlines on links; the template's link colour marks them instead.
+   !important overrides the many per-section underline rules in _sass. */
+a, a:hover, a:focus { text-decoration: none !important; }
