@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Coordinate frame: x red, y green, z blue (RViz convention) -->
+  <rect x=".5" y=".5" width="31" height="31" rx="7" fill="#fbfaf7" stroke="#d6d6d3"/>
+  <g stroke-width="3" stroke-linecap="round">
+    <path d="M10 22H25" stroke="#d64541"/>
+    <path d="M10 22V7" stroke="#2e9e5b"/>
+    <path d="M10 22L4 28" stroke="#2f6fd6"/>
+  </g>
+  <circle cx="10" cy="22" r="2.2" fill="#262626"/>
+</svg>
